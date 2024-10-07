@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuthDetect App - Authorities Detection System</title>
+    <link rel="stylesheet" href="detection.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <h1>AuthDetect App</h1>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload X-ray Image</h2>
+            <div class="upload-container">
+                <div class="file-upload">
+                    <input type="file" id="file-upload" accept="image/*">
+                    <label for="file-upload">
+                        <i class="fas fa-upload"></i>
+                        <span>Choose File</span>
+                    </label>
+                    <p id="file-name"></p>
+                </div>
+                <button id="check-button" disabled>
+                    <i class="fas fa-check"></i>
+                    <span>Check</span>
+                </button>
+            </div>
+            <div id="result-container">
+                <p>Result will be displayed here</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>About Authorities Detection</h2>
+            <p>
+                Authorities detection in X-ray images is a critical process in maintaining security across various
+                sectors. Our advanced AI-powered system can quickly and accurately identify potential threats or
+                anomalies in X-ray scans, helping security personnel make informed decisions and ensure safety.
+            </p>
+            <p>
+                The AuthDetect system uses state-of-the-art machine learning algorithms trained on vast datasets of
+                X-ray images. It can detect a wide range of authorities, including weapons, explosives, drugs, and
+                other contraband items, with high precision and minimal false positives.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AuthDetect. All rights reserved.</p>
+    </footer>
+
+    <script src="detection.js"></script>
+</body>
+</html>
